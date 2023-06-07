@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+
+@import './assets/scss/variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  background: $primaryBgColor;
+  height: 100%;
+}
+
+
+
+p,h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.title{
+  color: $primaryBgColor;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    
+    margin-bottom: 3rem;
+}
+
+.slavageroyam{
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: -.5rem;
+  background-color: $yellowColor;
+  padding: .1rem;
+  border: 5px solid $blueColor;
+  transition: all .3s ease-out; text-decoration: none;
+  color: $blueColor;
+  font-size: 1.5rem;
+  &:hover{
+    background-color: $primaryBgColor;
+    border: 5px solid $redColor;color:$redColor;
+  }
+}

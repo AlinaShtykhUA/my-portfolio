@@ -1,0 +1,141 @@
+@import '../../assets/scss/_variables.scss';
+
+
+.home {
+  margin: 5rem 0;
+  max-width: 100%;
+
+  &__content {
+    padding: 1rem;
+  }
+}
+
+.code {
+  max-width: 80vw;
+  border-radius: .5rem;
+  background-color: $secondaryBgColor;
+  color: #fff;
+  padding: 2rem;
+  filter: $shadow;
+  font-size: calc(24px + 16 * (80vw / 1380));
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .code-obj {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .code {
+    font-size: calc(18px + 16  * ((80vw - 320px) / 1380));
+    max-width: 70%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .code {
+    max-width: 90vw;
+  }
+
+  .code-obj {
+    padding: 0px 1rem;
+  }
+}
+
+.const {
+  color: $pinkColor;
+  padding-right: .3em;
+}
+
+.const-name {
+  color: $purplelColor;
+  padding-right: .3em;
+}
+
+.equal {
+  color: $pinkColor;
+}
+
+.bracket {
+  color: $yellowColor;
+  align-items: center;
+  display: flex;
+
+  &::after {
+    content: "{";
+    top: 0;
+    right: 0;
+    padding-left: .3em;
+    margin-top: -.2em;
+  }
+
+}
+
+.key {
+  color: $greenColor;
+}
+
+.colon {
+  color: $azureColor;
+  padding: 0 .3em;
+}
+
+.str {
+  color: $greenColor;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coma {
+  color: $purplelColor;
+}
+
+.code-line {
+  display: flex;
+}
+
+.code-const {
+  align-items: center;
+  display: flex;
+}
+
+.func {
+  color: $lightBlue;
+}
+
+.pink {
+  color: $pinkColor;
+
+  &::after {
+    margin-top: -1px;
+  }
+}
+
+.return {
+  color: $azureColor;
+  padding-left: 3rem;
+}
+
+.green {
+  color: $greenColor;
+}
+
+.blue {
+  color: $azureColor;
+}
+
+.purple {
+  color: $purplelColor;
+}
+
+.rotate {
+  &::after {
+    transform: rotate(180deg);
+    padding: 0;
+  }
+}

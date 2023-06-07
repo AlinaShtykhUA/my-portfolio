@@ -1,0 +1,102 @@
+@import '../../assets/scss/_variables.scss';
+
+.about{
+  margin: 5rem .5rem;
+  max-width: 100%;
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title{
+    text-shadow: -1px 0 $yellowColor, 0 1px $yellowColor, 1px 0 $yellowColor, 0 -1px $yellowColor;
+  }
+
+  &__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__code{
+    width: 60%;
+    font-size: 1.5rem;
+  }
+}
+
+.btn{
+  box-sizing: border-box;
+  max-width: 200px;
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 0;
+  background-color: $primaryBgColor;
+  font-size: 1rem;
+  padding: .5rem 1.5rem;
+  color: $primaryBgColor;
+  font-weight: 700;
+  text-shadow: -1px 0 $purplelColor, 0 1px $purplelColor, 1px 0 $purplelColor, 0 -1px $purplelColor;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .2s linear, text-shadow .2s linear, box-shadow .1s linear;
+  outline: none;
+  border: 1px solid $purplelColor;
+  cursor: pointer;
+  border-radius: .5rem;
+    &:hover {
+      color: $purplelColor !important;
+      text-shadow: none !important;
+      
+    }
+    &:active {
+      box-shadow: 0px 0px 20px rgba(165, 172, 208, 0.5);
+    }
+  
+    &-lang{
+      max-width: 100px;
+      text-align: center;
+      margin-top: 0;
+      padding: .5rem;
+      color: $purplelColor;
+      text-shadow: none;
+      margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+  .about{
+    &__content{
+      
+      width: 100%;
+    }
+    &__code{
+      width: 90vw;
+      font-size: 1.5rem;
+      &-top{
+        height: fit-content;
+        width: 100%;
+      }
+      &-bottom{
+        margin: 0;
+        height: fit-content;
+        width: 100%;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 440px) {
+  .about{
+    &__code{
+    
+      font-size: 1.2rem;
+      
+    }
+  }
+
+}
