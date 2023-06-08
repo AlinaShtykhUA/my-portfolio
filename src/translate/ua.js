@@ -43,7 +43,7 @@ const uaData = {
       "title": "Персональний сайт",
       "description": "Сайт-портфоліо на React, виконаний в стилі single-page application(SPA)",
       "coverImg": mySite,
-      "github": {"icon": github, "link": "https://github.com/"},
+      "github": {"icon": github, "link": "https://github.com/AlinaShtykhUA/my-portfolio"},
       "link": {"icon": link, "link": "#"}
     },
     {

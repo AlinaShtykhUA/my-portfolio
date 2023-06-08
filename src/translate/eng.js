@@ -43,7 +43,7 @@ const engData = {
       "title": "Personal site",
       "description": "Site-portfolio in React, make in single-page application style.",
       "coverImg": mySite,
-      "github": {"icon": github, "link": "https://github.com/"},
+      "github": {"icon": github, "link": "https://github.com/AlinaShtykhUA/my-portfolio"},
       "link": {"icon": link, "link": "#"}
     },
     {
