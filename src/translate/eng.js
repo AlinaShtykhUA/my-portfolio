@@ -30,6 +30,8 @@ const engData = {
   contacts: {
     title: 'Contact me',
     link: 'link to my',
+    link2: 'link to my',
+    webcv: 'https://sweetcv.com/-lowj8cfyib7f',
   },
   portfolio: {
     title: 'My works',

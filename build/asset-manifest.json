@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.08434c6f.css",
-    "main.js": "/static/js/main.6936ceff.js",
+    "main.js": "/static/js/main.9f497f27.js",
     "static/media/game-store.png": "/static/media/game-store.3fe44f32ff0bf96c80cd.png",
+    "static/media/nike-store.png": "/static/media/nike-store.01c9ab655313c1afcb7b.png",
     "static/media/quizzical.png": "/static/media/quizzical.9f56d4fb76a9928fff1e.png",
     "static/media/tenzies.png": "/static/media/tenzies.e46286cf4f40be0473bb.png",
     "static/media/mySite.png": "/static/media/mySite.75b87d8cd5703a7010e3.png",
     "static/media/link.svg": "/static/media/link.e7890d3fbfd2e42a046cb51f02be700b.svg",
     "static/media/logo.svg": "/static/media/logo.a348beb81fb48630eafd04833452c49e.svg",
     "static/media/github.svg": "/static/media/github.0770458c653ae317487b134eda8c1533.svg",
-    "static/media/linkedin.svg": "/static/media/linkedin.ff3b3daee70fc7bbf7e329f7650c416f.svg",
     "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.ff3b3daee70fc7bbf7e329f7650c416f.svg",
     "main.08434c6f.css.map": "/static/css/main.08434c6f.css.map",
-    "main.6936ceff.js.map": "/static/js/main.6936ceff.js.map"
+    "main.9f497f27.js.map": "/static/js/main.9f497f27.js.map"
   },
   "entrypoints": [
     "static/css/main.08434c6f.css",
-    "static/js/main.6936ceff.js"
+    "static/js/main.9f497f27.js"
   ]
 }

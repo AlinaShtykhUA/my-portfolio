@@ -28,7 +28,9 @@ const uaData = {
   },
   contacts: {
     title: 'ЗВʼЯЖІТЬСЯ ЗІ МНОЮ',
-    link: 'посилання на мій',
+    link: 'посилання на моє',
+    link2: 'посилання на мій',
+    webcv: 'https://sweetcv.com/6oezy01tp0w91',
   },
   portfolio: {
     title: 'МОЇ РОБОТИ',
