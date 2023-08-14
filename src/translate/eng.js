@@ -5,6 +5,7 @@ import quizzical from '../assets/img/portfolio/quizzical.png';
 import tenzies from '../assets/img/portfolio/tenzies.png';
 import gameStore from '../assets/img/portfolio/game-store.png';
 import nikeStore from '../assets/img/portfolio/nike-store.png';
+import pokedex from '../assets/img/portfolio/pokedex.png';
 
 const engData = {
   change: 'ua',
@@ -44,7 +45,19 @@ const engData = {
   },
   'projects-data': [
     {
-      key: 1,
+      key: 6,
+      title: 'Pokedex',
+      description:
+        'Pokedex itʼs a pc or tablet web application where you can find all pokemons and information about them from pokeAPI. I used react, typescrip, redux-toolkit, firebase for authorization, axios, SCSS',
+      coverImg: pokedex,
+      github: {
+        icon: github,
+        link: 'https://github.com/AlinaShtykhUA/pokedex',
+      },
+      link: { icon: link, link: 'https://pokedex-pet.netlify.app/' },
+    },
+    {
+      key: 5,
       title: 'Personal site',
       description:
         'Site-portfolio in React, make in single-page application style.',
@@ -56,7 +69,7 @@ const engData = {
       link: { icon: link, link: '#' },
     },
     {
-      key: 2,
+      key: 4,
       title: 'Quizzical game',
       description:
         'Quizzical game in react. Solo project from Scrimba. I used trivia database API, nanoid, react create app, react hooks, SASS',
@@ -85,7 +98,7 @@ const engData = {
       },
     },
     {
-      key: 4,
+      key: 2,
       title: 'Game store',
       description: 'Game store, created in react, redux(toolkit), router',
       coverImg: gameStore,
@@ -99,7 +112,7 @@ const engData = {
       },
     },
     {
-      key: 5,
+      key: 1,
       title: 'Nike store',
       description:
         'Nike store, created in react, redux(toolkit). For design used Tailwind.',

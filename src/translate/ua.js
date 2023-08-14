@@ -5,6 +5,8 @@ import quizzical from '../assets/img/portfolio/quizzical.png';
 import tenzies from '../assets/img/portfolio/tenzies.png';
 import gameStore from '../assets/img/portfolio/game-store.png';
 import nikeStore from '../assets/img/portfolio/nike-store.png';
+import pokedex from '../assets/img/portfolio/pokedex.png';
+
 const uaData = {
   change: 'eng',
   nav: {
@@ -43,7 +45,19 @@ const uaData = {
   },
   'projects-data': [
     {
-      key: 1,
+      key: 6,
+      title: 'Pokedex',
+      description:
+        'Pokedex - веб додаток для пк і планшетів, де ви можете знайти будь-якого покемона та дізнатись інформацію про нього, на основі pokeAPI. Я використовувала стек: react, typescrip, redux-toolkit, firebase для авторизації, axios, SCSS',
+      coverImg: pokedex,
+      github: {
+        icon: github,
+        link: 'https://github.com/AlinaShtykhUA/pokedex',
+      },
+      link: { icon: link, link: 'https://pokedex-pet.netlify.app/' },
+    },
+    {
+      key: 5,
       title: 'Персональний сайт',
       description:
         'Сайт-портфоліо на React, виконаний в стилі single-page application(SPA)',
@@ -55,7 +69,7 @@ const uaData = {
       link: { icon: link, link: '#' },
     },
     {
-      key: 2,
+      key: 4,
       title: 'Гра Quizzical',
       description:
         'Гра quizze на React. Самостійний проект з сайту Scrimba. Я використовувала: trivia database API, nanoid, react create app, react hooks, SASS',
@@ -85,7 +99,7 @@ const uaData = {
       },
     },
     {
-      key: 4,
+      key: 2,
       title: 'Магазин ігр',
       description:
         'Сайт магазина ігр на React. З використанням redux-toolkit, router.',
@@ -100,7 +114,7 @@ const uaData = {
       },
     },
     {
-      key: 5,
+      key: 1,
       title: 'Магазин взуття Nike',
       description:
         'Магазин лімітованного взуття Nike. З використанням react, redux(toolkit). Для дизайну використовувалась бібліотека Tailwind.',
