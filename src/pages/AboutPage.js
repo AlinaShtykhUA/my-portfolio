@@ -148,6 +148,9 @@ const AboutPage = () => {
                       <span className='blue'>‘</span>React(Router, Hooks)
                       <span className='blue'>’</span>
                       <span className='purple'>,</span>
+                      <span className='blue'>‘</span>TypeScript
+                      <span className='blue'>’</span>
+                      <span className='purple'>,</span>
                       <span className='blue'>‘</span>Redux
                       <span className='blue'>’</span>
                       <span className='purple'>,</span>
