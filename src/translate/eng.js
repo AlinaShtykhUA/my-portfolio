@@ -32,7 +32,8 @@ const engData = {
     title: 'Contact me',
     link: 'link to my',
     link2: 'link to my',
-    webcv: 'https://sweetcv.com/-lowj8cfyib7f',
+    webcv:
+      'https://drive.google.com/file/d/1sHHyEzjO5Tv6eGSUDEZZZV8AKuqvrWEK/view',
   },
   portfolio: {
     title: 'My works',

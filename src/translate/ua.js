@@ -32,7 +32,8 @@ const uaData = {
     title: 'ЗВʼЯЖІТЬСЯ ЗІ МНОЮ',
     link: 'посилання на моє',
     link2: 'посилання на мій',
-    webcv: 'https://sweetcv.com/6oezy01tp0w91',
+    webcv:
+      'https://drive.google.com/file/d/1sHHyEzjO5Tv6eGSUDEZZZV8AKuqvrWEK/view',
   },
   portfolio: {
     title: 'МОЇ РОБОТИ',
