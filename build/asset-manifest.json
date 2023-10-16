@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08434c6f.css",
-    "main.js": "/static/js/main.64f90c21.js",
+    "main.js": "/static/js/main.f60aa87c.js",
     "static/media/game-store.png": "/static/media/game-store.3fe44f32ff0bf96c80cd.png",
     "static/media/nike-store.png": "/static/media/nike-store.01c9ab655313c1afcb7b.png",
     "static/media/pokedex.png": "/static/media/pokedex.c629235d4f16f7b43dd5.png",
@@ -14,10 +14,10 @@
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.ff3b3daee70fc7bbf7e329f7650c416f.svg",
     "main.08434c6f.css.map": "/static/css/main.08434c6f.css.map",
-    "main.64f90c21.js.map": "/static/js/main.64f90c21.js.map"
+    "main.f60aa87c.js.map": "/static/js/main.f60aa87c.js.map"
   },
   "entrypoints": [
     "static/css/main.08434c6f.css",
-    "static/js/main.64f90c21.js"
+    "static/js/main.f60aa87c.js"
   ]
 }
