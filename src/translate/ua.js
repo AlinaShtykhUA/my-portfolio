@@ -33,7 +33,7 @@ const uaData = {
     link: 'посилання на моє',
     link2: 'посилання на мій',
     webcv:
-      'https://drive.google.com/file/d/1sHHyEzjO5Tv6eGSUDEZZZV8AKuqvrWEK/view',
+      'https://drive.google.com/file/d/1ZU58sMpfmuBbbfFklZsMPzEVo4XZUAjl/view',
   },
   portfolio: {
     title: 'МОЇ РОБОТИ',

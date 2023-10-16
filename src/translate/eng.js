@@ -33,7 +33,7 @@ const engData = {
     link: 'link to my',
     link2: 'link to my',
     webcv:
-      'https://drive.google.com/file/d/1sHHyEzjO5Tv6eGSUDEZZZV8AKuqvrWEK/view',
+      'https://drive.google.com/file/d/1ZU58sMpfmuBbbfFklZsMPzEVo4XZUAjl/view',
   },
   portfolio: {
     title: 'My works',
