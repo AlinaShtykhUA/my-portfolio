@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "framer-motion": "^7.6.15",
+    "gsap": "^3.12.2",
     "i18next": "^22.4.5",
     "node-sass": "^7.0.3",
     "nth-check": "^2.1.1",

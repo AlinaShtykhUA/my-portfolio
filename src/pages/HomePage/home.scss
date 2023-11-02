@@ -11,6 +11,9 @@
 }
 
 .code {
+  opacity: 1;
+      scale: 1;
+  white-space: pre-line;
   max-width: 80vw;
   border-radius: .5rem;
   background-color: $secondaryBgColor;

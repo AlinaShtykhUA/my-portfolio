@@ -1,11 +1,29 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import gsap from "gsap";
 import "./about.scss";
+
 const AboutPage = () => {
   const [state, setState] = useState(true);
   const { t } = useTranslation();
+  const contentRef = useRef(null);
+  useEffect(() => {
+    const content = contentRef.current;
+
+    gsap.from(content, {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1,
+      ease: "power2.out",
+    });
+    gsap.to(content, {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      ease: "power2.out",
+    });
+  }, [state]);
 
   function handleState() {
     setState((prevState) => !prevState);
@@ -29,19 +47,13 @@ const AboutPage = () => {
   }
   const birthDate = "1997-05-31";
   return (
-    <motion.section
-      className="about"
-      initial={{ y: "100%" }}
-      animate={{ y: "0%" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      exit={{ opacity: 1 }}
-    >
+    <section className="about">
       <div className="container">
         <div className="about__inner">
           <div className="about__title title">{t("about.title")}</div>
           <div className="about__content">
             {state ? (
-              <div className="about__code code">
+              <div ref={contentRef} className="about__code code">
                 <div className="code-const">
                   <span className="const">const</span>
                   <span className="const-name">personal</span>
@@ -111,7 +123,7 @@ const AboutPage = () => {
                 <div className="bracket rotate"></div>
               </div>
             ) : (
-              <div className="about__code code">
+              <div ref={contentRef} className="about__code code">
                 <div className="code-const">
                   <span className="const">const</span>
                   <span className="const-name">profesionalThings</span>
@@ -208,7 +220,7 @@ const AboutPage = () => {
           </button>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

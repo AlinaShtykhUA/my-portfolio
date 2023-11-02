@@ -1,20 +1,33 @@
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import gsap from "gsap";
 import "./home.scss";
+
 const HomePage = () => {
   const { t } = useTranslation();
+  const contentRef = useRef(null);
+  useEffect(() => {
+    const content = contentRef.current;
+
+    gsap.from(content, {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1,
+      ease: "power2.out",
+    });
+    gsap.to(content, {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      ease: "power2.out",
+    });
+  }, []);
   return (
-    <motion.section
-      className="home"
-      initial={{ y: "100%" }}
-      animate={{ y: "0%" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      exit={{ opacity: 1 }}
-    >
+    <section className="home">
       <div className="container">
         <div className="home__inner">
           <div className="home__content">
-            <div className="home__code code">
+            <div ref={contentRef} className="home__code code">
               <div className="code-const">
                 <span className="const">const</span>
                 <span className="const-name">sayHello</span>
@@ -66,7 +79,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

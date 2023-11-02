@@ -1,22 +1,34 @@
-import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import gsap from "gsap";
 import "./contacts.scss";
+
 const ContactsPage = () => {
   const { t } = useTranslation();
+  const contentRef = useRef(null);
+  useEffect(() => {
+    const content = contentRef.current;
 
+    gsap.from(content, {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1,
+      ease: "power2.out",
+    });
+    gsap.to(content, {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      ease: "power2.out",
+    });
+  }, []);
   return (
-    <motion.section
-      className="contacts"
-      initial={{ y: "100%" }}
-      animate={{ y: "0%" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      exit={{ opacity: 1 }}
-    >
+    <section className="contacts">
       <div className="container">
         <div className="contacts__inner">
           <div className="contacts__title title">{t("contacts.title")}</div>
           <div className="contacts__content">
-            <div className="contacts__code code">
+            <div ref={contentRef} className="contacts__code code">
               <div className="code-const">
                 <span className="const">const</span>
                 <span className="const-name">contacts</span>
@@ -82,7 +94,7 @@ const ContactsPage = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 
