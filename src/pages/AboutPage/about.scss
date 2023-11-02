@@ -1,4 +1,4 @@
-@import '../../assets/scss/_variables.scss';
+@import '../../styles/_variables.scss';
 
 .about{
   margin: 5rem .5rem;
@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
   }
-
   &__title{
     text-shadow: -1px 0 $yellowColor, 0 1px $yellowColor, 1px 0 $yellowColor, 0 -1px $yellowColor;
   }
