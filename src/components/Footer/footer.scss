@@ -1,0 +1,99 @@
+@import '../../styles/_variables.scss';
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  background-color: $purplelColor;
+  filter: $shadow;
+
+  &__made-with-love {
+    color: $purplelColor;
+    text-shadow: -1px 0 $primaryBgColor, 0 1px $primaryBgColor, 1px 0 $primaryBgColor, 0 -1px $primaryBgColor;
+    line-height: 1.2;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-weight: 700;
+    padding-right: 1rem;
+  }
+
+  &__social {
+    padding-right: 1rem;
+    margin-top: .5rem;
+    line-height: 0;
+
+    &-link {
+
+
+      &:nth-last-child(2) {
+        margin-right: .5rem;
+      }
+
+      img {
+        height: 2rem;
+        width: 2rem;
+        transition: transform .2s linear;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+    }
+  }
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+  background-color: $redColor;
+  display: inline-block;
+  height: .8rem;
+  top: 0;
+  transform: rotate(-45deg);
+  left: 0;
+  top: 0;
+  width: .8rem;
+  position: relative;
+  margin-left: .8rem;
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: $redColor;
+    border-radius: 50%;
+    height: .8rem;
+    position: absolute;
+    width: .8rem;
+  }
+
+  &::before {
+    top: -8px;
+    left: 0;
+  }
+
+  &::after {
+    left: 8px;
+    top: 0;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+
+  20% {
+    transform: scale(1.1) rotate(-45deg);
+  }
+
+  40% {
+    transform: scale(1.2) rotate(-45deg);
+  }
+}
+

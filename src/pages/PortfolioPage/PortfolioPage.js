@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import ProjectCard from "../../components/ProjectCard";
+import { ProjectCard } from "../../components";
 
 import "./portfolio.scss";
 
