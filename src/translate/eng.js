@@ -1,11 +1,11 @@
 import github from "../assets/img/github.svg";
 import link from "../assets/img/portfolio/link.svg";
-import mySite from "../assets/img/portfolio/mySite.png";
-import quizzical from "../assets/img/portfolio/quizzical.png";
-import tenzies from "../assets/img/portfolio/tenzies.png";
-import gameStore from "../assets/img/portfolio/game-store.png";
-import nikeStore from "../assets/img/portfolio/nike-store.png";
-import pokedex from "../assets/img/portfolio/pokedex.png";
+import mySite from "../assets/img/portfolio/mySite.webp";
+import quizzical from "../assets/img/portfolio/quizzical.webp";
+import tenzies from "../assets/img/portfolio/tenzies.webp";
+import gameStore from "../assets/img/portfolio/game-store.webp";
+import nikeStore from "../assets/img/portfolio/nike-store.webp";
+import pokedex from "../assets/img/portfolio/pokedex.webp";
 
 const engData = {
   change: "ua",
