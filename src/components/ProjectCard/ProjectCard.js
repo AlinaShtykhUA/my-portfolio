@@ -1,13 +1,38 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
-
 import "./projectCard.scss";
 
 const ProjectCard = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const contentRef = useRef(null);
 
+  useEffect(() => {
+    const content = contentRef.current;
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(content, {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: content,
+      },
+    });
+    gsap.to(content, {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: content,
+      },
+    });
+  }, []);
   return (
-    <motion.div className="card">
+    <div ref={contentRef} className="card">
       <motion.div
         transition={{ layout: { duration: 1, type: "spring" } }}
         onClick={() => setIsOpen(!isOpen)}
@@ -51,7 +76,7 @@ const ProjectCard = (props) => {
           </div>
         </motion.div>
       )}
-    </motion.div>
+    </div>
   );
 };
 
