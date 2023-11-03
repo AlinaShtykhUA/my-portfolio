@@ -12,25 +12,25 @@ const ProjectCard = (props) => {
     const content = contentRef.current;
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(content, {
-      opacity: 0,
-      scale: 0.5,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: content,
-      },
-    });
-    gsap.to(content, {
-      opacity: 1,
-      scale: 1,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: content,
-      },
-    });
+    gsap.fromTo(
+      content,
+      { opacity: 0, scale: 0.5 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: content,
+          start: "top 80%", //початок анімації на 80 відсотках вікна
+          end: "top 20%", //закінчення анімації на 20 відсотках вікна
+          scrub: 0.5, // плавність
+          toggleActions: "play none none none",
+        },
+      }
+    );
   }, []);
+
   return (
     <div ref={contentRef} className="card">
       <motion.div
