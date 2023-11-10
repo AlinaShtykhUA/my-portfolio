@@ -22,13 +22,15 @@ const ProjectCard = (props) => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: content,
-          start: "top 80%", //початок анімації на 80 відсотках вікна
-          end: "top 20%", //закінчення анімації на 20 відсотках вікна
-          scrub: 0.5, // плавність
+          start: "top 80%",
+          end: "top 20%",
+          scrub: 0.5,
           toggleActions: "play none none none",
         },
       }
     );
+
+    ScrollTrigger.update();
   }, []);
 
   return (

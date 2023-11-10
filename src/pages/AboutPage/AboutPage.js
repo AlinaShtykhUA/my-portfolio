@@ -179,9 +179,6 @@ const AboutPage = () => {
                       <span className="blue">‘</span>Webpack
                       <span className="blue">’</span>
                       <span className="purple">,</span>
-                      <span className="blue">‘</span>Gulp
-                      <span className="blue">’</span>
-                      <span className="purple">,</span>
                       <span className="blue">‘</span>npm/npx
                       <span className="blue">’</span>
                       <span className="pink">]</span>
