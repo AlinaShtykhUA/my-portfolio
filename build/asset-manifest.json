@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.5f3512ab.css",
-    "main.js": "/static/js/main.fb4b7a6c.js",
-    "static/media/game-store.png": "/static/media/game-store.3fe44f32ff0bf96c80cd.png",
-    "static/media/nike-store.png": "/static/media/nike-store.01c9ab655313c1afcb7b.png",
-    "static/media/pokedex.png": "/static/media/pokedex.c629235d4f16f7b43dd5.png",
-    "static/media/quizzical.png": "/static/media/quizzical.9f56d4fb76a9928fff1e.png",
-    "static/media/tenzies.png": "/static/media/tenzies.e46286cf4f40be0473bb.png",
-    "static/media/mySite.png": "/static/media/mySite.75b87d8cd5703a7010e3.png",
+    "main.js": "/static/js/main.406764dc.js",
+    "static/media/game-store.webp": "/static/media/game-store.b031238f6582d19feb1c.webp",
+    "static/media/nike-store.webp": "/static/media/nike-store.7a363bc1f51ab8c97664.webp",
+    "static/media/pokedex.webp": "/static/media/pokedex.87c823f96fff252bec31.webp",
+    "static/media/quizzical.webp": "/static/media/quizzical.0fc50b31476b6d24529d.webp",
+    "static/media/tenzies.webp": "/static/media/tenzies.d61e10df9dd5c59689b6.webp",
+    "static/media/mySite.webp": "/static/media/mySite.cbd3275993217510b5ae.webp",
     "static/media/link.svg": "/static/media/link.e7890d3fbfd2e42a046cb51f02be700b.svg",
     "static/media/logo.svg": "/static/media/logo.a348beb81fb48630eafd04833452c49e.svg",
     "static/media/github.svg": "/static/media/github.0770458c653ae317487b134eda8c1533.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.ff3b3daee70fc7bbf7e329f7650c416f.svg",
     "main.5f3512ab.css.map": "/static/css/main.5f3512ab.css.map",
-    "main.fb4b7a6c.js.map": "/static/js/main.fb4b7a6c.js.map"
+    "main.406764dc.js.map": "/static/js/main.406764dc.js.map"
   },
   "entrypoints": [
     "static/css/main.5f3512ab.css",
-    "static/js/main.fb4b7a6c.js"
+    "static/js/main.406764dc.js"
   ]
 }

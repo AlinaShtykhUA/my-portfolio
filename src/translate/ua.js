@@ -67,7 +67,7 @@ const uaData = {
         icon: github,
         link: "https://github.com/AlinaShtykhUA/my-portfolio",
       },
-      link: { icon: link, link: "#" },
+      link: { icon: link, link: "https://www.web-shtykh.tech/" },
     },
     {
       key: 4,
