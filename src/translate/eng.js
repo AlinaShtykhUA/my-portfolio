@@ -33,7 +33,7 @@ const engData = {
     link: "link to my",
     link2: "link to my",
     webcv:
-      "https://drive.google.com/file/d/1ZU58sMpfmuBbbfFklZsMPzEVo4XZUAjl/view",
+      "https://www.canva.com/design/DAF2Cp1ILaU/50qidrEO-smezIYEDVCFsQ/view?utm_content=DAF2Cp1ILaU&utm_campaign=designshare&utm_medium=link&utm_source=editor",
   },
   portfolio: {
     title: "My works",

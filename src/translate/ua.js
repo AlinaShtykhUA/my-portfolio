@@ -33,7 +33,7 @@ const uaData = {
     link: "посилання на моє",
     link2: "посилання на мій",
     webcv:
-      "https://drive.google.com/file/d/1ZU58sMpfmuBbbfFklZsMPzEVo4XZUAjl/view",
+      "https://www.canva.com/design/DAF2Cp1ILaU/50qidrEO-smezIYEDVCFsQ/view?utm_content=DAF2Cp1ILaU&utm_campaign=designshare&utm_medium=link&utm_source=editor",
   },
   portfolio: {
     title: "МОЇ РОБОТИ",
