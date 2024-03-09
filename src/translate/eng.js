@@ -6,6 +6,7 @@ import tenzies from "../assets/img/portfolio/tenzies.webp";
 import gameStore from "../assets/img/portfolio/game-store.webp";
 import nikeStore from "../assets/img/portfolio/nike-store.webp";
 import pokedex from "../assets/img/portfolio/pokedex.webp";
+import iwillhelpyou from "../assets/img/portfolio/iwillhelpyou.webp";
 
 const engData = {
   change: "ua",
@@ -45,6 +46,18 @@ const engData = {
     name: "Alina Shtykh",
   },
   "projects-data": [
+    {
+      key: 7,
+      title: "I Will Help You",
+      description:
+        "Charity website with such features as volunteer management, donation, education, and legal inquiries. My responsibilities: Layouting the main page, Image optimization, Developing front-end part of admin panel: layouting, add/delete/edit functionality form, Accessibility.Technologies: React(hooks, router), Redux-toolkit, TypeSctipt, SCSS, REST API.",
+      coverImg: iwillhelpyou,
+      github: {
+        icon: github,
+        link: "https://github.com/anpdko/i-will-help-you-client",
+      },
+      link: { icon: link, link: "https://iwillhelpyou.charity/" },
+    },
     {
       key: 6,
       title: "Pokedex",

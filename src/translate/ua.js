@@ -6,6 +6,7 @@ import tenzies from "../assets/img/portfolio/tenzies.webp";
 import gameStore from "../assets/img/portfolio/game-store.webp";
 import nikeStore from "../assets/img/portfolio/nike-store.webp";
 import pokedex from "../assets/img/portfolio/pokedex.webp";
+import iwillhelpyou from "../assets/img/portfolio/iwillhelpyou.webp";
 
 const uaData = {
   change: "eng",
@@ -45,6 +46,18 @@ const uaData = {
     name: "Аліна Штих",
   },
   "projects-data": [
+    {
+      key: 7,
+      title: "I Will Help You",
+      description:
+        "Сайт благодійного фонду, який має функціонал менеджменду волонтерів, функцією донатів, надання освіти та юридичних послуг. В мої обовʼязки входило: Верстка головної сторінки, Оптимізація зображень, Розробка адмін-панелі: верстка, функціонал додати/видалити/редагувати информацію, Доступність. Технології: React(hooks, router), Redux-toolkit, TypeSctipt, SCSS, REST API.",
+      coverImg: iwillhelpyou,
+      github: {
+        icon: github,
+        link: "https://github.com/anpdko/i-will-help-you-client",
+      },
+      link: { icon: link, link: "https://iwillhelpyou.charity/" },
+    },
     {
       key: 6,
       title: "Pokedex",
