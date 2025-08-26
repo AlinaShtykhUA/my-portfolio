@@ -6,33 +6,40 @@ import "./projectCard.scss";
 
 const ProjectCard = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
   const contentRef = useRef(null);
 
+
   useEffect(() => {
-    const content = contentRef.current;
-    gsap.registerPlugin(ScrollTrigger);
+    if (imageLoaded && contentRef.current) {
+      gsap.registerPlugin(ScrollTrigger);
 
-    gsap.fromTo(
-      content,
-      { opacity: 0, scale: 0.5 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: content,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 0.5,
-          toggleActions: "play none none none",
-        },
-      }
-    );
+      gsap.set(contentRef.current, { opacity: 0, scale: 0.5 });
 
-    ScrollTrigger.update();
-  }, []);
+      const timeline = gsap.to(
+        contentRef.current,
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: contentRef.current,
+            start: "top 80%",
+            end: "top 20%",
+            scrub: 0.5,
+            toggleActions: "play none none none",
+          },
+        }
+      );
 
+      return () => {
+        if (timeline) {
+          timeline.kill();
+        }
+      };
+    }
+  }, [imageLoaded]);
   return (
     <div ref={contentRef} className="card">
       <motion.div
@@ -41,7 +48,11 @@ const ProjectCard = (props) => {
         className="card__img"
         layout
       >
-        <img src={props.coverImg} alt="personal site" />
+        <img
+          src={props.coverImg}
+          alt="personal site"
+          onLoad={() => setImageLoaded(true)}
+        />
       </motion.div>
 
       {isOpen && (
